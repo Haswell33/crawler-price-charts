@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Charts with components</title>
+    <!--<link rel="stylesheet" href="style.css">-->
+</head>
+
+<style>
+    body{
+        background: #8e918f;
+    }
+
+    ul{
+        display: inline
+        float: center;
+        list-style-type: none;
+
+    }
+
+    ul a{
+        color: #e8e8e8;
+        text-decoration: none;
+        padding: 25px;
+    }
+
+    li{
+           padding: 10px;
+    }
+</style>
+<body>
+    <ul class="list-item">
+        <li >
+            <a href="{{ url_for('processors') }}">Chart with processors</a>
+            <a href="{{ url_for('graphic_cards') }}">Chart with graphic cards</a>
+            <a href="{{ url_for('disks') }}">Chart with disks</a>
+        </li>
+    </ul>
+
+</body>
+</html>
